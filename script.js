@@ -28,6 +28,11 @@
                 previousArray = storedPlans;
 
                 }
+                else {
+          
+                  previousArray = new Array(9);
+                }
+                  
     
                 //Setting the var planner to the HTML id plannerContainer
                 let $planner = $('#plannerContainer');
@@ -132,6 +137,6 @@
         let $value = $(inputId).val();
     
         previousArray[$index] = $value;
-        storedPlans.setItem("storedPlans", JSON.stringify(previousArray));
+        localStorage.setItem("storedPlans", JSON.stringify(previousArray));
 
-      });  
+      });
