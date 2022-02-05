@@ -132,6 +132,6 @@
         let $value = $(inputId).val();
     
         previousArray[$index] = $value;
-        localStorage.setItem("storedPlans", JSON.stringify(previousArray));
+        storedPlans.setItem("storedPlans", JSON.stringify(previousArray));
 
       });  
